@@ -53,7 +53,7 @@ namespace Proyecto_ordinario
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            if (A.Insertar(Convert.ToInt32(tbxIDactualizar.Text),txbMarca.Text, txbModel.Text, Convert.ToInt32(txbAnio.Text), txbColor.Text, Convert.ToDouble(txbPrecio.Text), txbEstado.Text))
+            if (A.Actualizar(Convert.ToInt32(tbxIDactualizar.Text),txbMarca.Text, txbModel.Text, Convert.ToInt32(txbAnio.Text), txbColor.Text, Convert.ToDouble(txbPrecio.Text), txbEstado.Text))
                 MessageBox.Show("Actualizado con exito");
             else MessageBox.Show("Fallo al actualizar");
         }
